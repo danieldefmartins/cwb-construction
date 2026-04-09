@@ -98,6 +98,12 @@ We serve homeowners across Greater Boston, the North Shore, Merrimack Valley, an
             "Yes. We have experience with historic properties across the North Shore and Greater Boston. We offer insert replacements that preserve existing exterior trim and can match period-appropriate styles while upgrading to modern energy performance.",
         },
       ]}
+      images={[
+        "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
+        "/projects/siding-exterior/porch-stairs-finished.jpg",
+        "/projects/siding-exterior/siding-exterior-renovation.jpg",
+        "/projects/decks-outdoor/composite-deck-2023-a/composite-deck-exterior-01.jpg",
+      ]}
     />
   );
 }

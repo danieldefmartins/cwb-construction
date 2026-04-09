@@ -98,6 +98,16 @@ Whether you're building on a lot you already own or developing a new parcel, we 
             "New construction in Greater Boston and Southern NH typically ranges from $250 to $450+ per square foot depending on finishes, site conditions, and design complexity. We provide a transparent, itemized budget tied to your specific plans.",
         },
       ]}
+      images={[
+        "/projects/framing-progress/deck-framing-posts-01.jpg",
+        "/projects/decks-outdoor/hardwood-deck-2022/deck-framing-structure-01.jpg",
+        "/projects/framing-progress/stair-stringer-build-action.jpg",
+        "/projects/siding-exterior/siding-install-crew.jpg",
+        "/projects/decks-outdoor/elevated-deck-2023/elevated-deck-framing-01.jpg",
+        "/projects/roofing/roof-shingle-install-01.jpg",
+        "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
+        "/projects/decks-outdoor/hardwood-deck-2022/deck-finished-exterior-full.jpg",
+      ]}
     />
   );
 }

@@ -94,6 +94,12 @@ export default function BasementRenovationPage() {
             "We recommend luxury vinyl plank (LVP) or engineered tile for most basement applications. Both are moisture-resistant, durable, and comfortable underfoot. We avoid traditional hardwood below grade due to humidity concerns. Heated floor mats are a popular upgrade for added comfort.",
         },
       ]}
+      images={[
+        "/projects/framing-progress/stair-stringer-build-action.jpg",
+        "/projects/framing-progress/deck-framing-posts-01.jpg",
+        "/projects/siding-exterior/siding-install-crew.jpg",
+        "/projects/decks-outdoor/hardwood-deck-2022/deck-framing-structure-01.jpg",
+      ]}
     />
   );
 }

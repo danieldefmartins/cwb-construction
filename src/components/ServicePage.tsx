@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface ServiceFeature {
@@ -18,6 +19,7 @@ interface ServicePageProps {
   features: ServiceFeature[];
   process: { step: string; title: string; description: string }[];
   faqs: FAQ[];
+  images?: string[];
   ctaTitle?: string;
   ctaDescription?: string;
   emergency?: boolean;
@@ -31,6 +33,7 @@ export function ServicePage({
   features,
   process,
   faqs,
+  images,
   ctaTitle = "Ready to Get Started?",
   ctaDescription = "Get a free, no-obligation estimate for your project. We'll walk through your options and provide a detailed proposal.",
   emergency = false,
@@ -63,6 +66,41 @@ export function ServicePage({
           </div>
         </div>
       </section>
+
+      {/* Project Gallery */}
+      {images && images.length > 0 && (
+        <section className="py-16 bg-muted">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex items-end justify-between mb-8">
+              <div>
+                <span className="text-accent font-display font-semibold text-sm uppercase tracking-widest">Our Work</span>
+                <h2 className="mt-2 font-display text-2xl sm:text-3xl font-bold text-foreground">
+                  Recent Projects
+                </h2>
+              </div>
+              <Link href="/portfolio" className="hidden sm:inline-flex items-center gap-2 text-accent font-semibold text-sm hover:gap-3 transition-all">
+                View All
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+              {images.map((img, i) => (
+                <div key={i} className="aspect-[4/3] relative rounded-xl overflow-hidden bg-card group">
+                  <Image
+                    src={img}
+                    alt={`${title} project photo ${i + 1}`}
+                    fill
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Description + Features */}
       <section className="py-20">

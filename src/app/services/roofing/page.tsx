@@ -94,6 +94,12 @@ export default function RoofingPage() {
             "Yes. We work with your insurance company throughout the claims process, providing detailed documentation, photos, and scope of work to help ensure your claim is properly filed and approved.",
         },
       ]}
+      images={[
+        "/projects/roofing/roof-shingle-install-01.jpg",
+        "/projects/roofing/roof-shingle-install-02.jpg",
+        "/projects/roofing/roof-shingle-progress-01.jpg",
+        "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
+      ]}
     />
   );
 }

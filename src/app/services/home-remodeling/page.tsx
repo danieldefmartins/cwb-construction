@@ -98,6 +98,12 @@ We work with homeowners across Greater Boston, the Merrimack Valley, and Souther
             "Yes. We regularly collaborate with architects and interior designers, and we can recommend professionals we trust. If your project requires architectural plans or engineering, we coordinate that process as part of our scope.",
         },
       ]}
+      images={[
+        "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
+        "/projects/decks-outdoor/hardwood-deck-2022/deck-finished-exterior-full.jpg",
+        "/projects/siding-exterior/porch-stairs-finished.jpg",
+        "/projects/decks-outdoor/composite-deck-2023-b/composite-deck-evening-01.jpg",
+      ]}
     />
   );
 }

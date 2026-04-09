@@ -94,6 +94,12 @@ export default function HomeAdditionPage() {
             "Absolutely. We source matching or complementary siding, roofing, trim, and windows so the addition looks like a natural extension of your original home. This is one of the things our clients value most about working with us.",
         },
       ]}
+      images={[
+        "/projects/decks-outdoor/elevated-deck-2023/elevated-deck-finished-exterior.jpg",
+        "/projects/framing-progress/stair-stringer-build-action.jpg",
+        "/projects/decks-outdoor/elevated-deck-2023/elevated-deck-framing-01.jpg",
+        "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
+      ]}
     />
   );
 }

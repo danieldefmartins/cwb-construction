@@ -94,6 +94,16 @@ export default function SidingPage() {
             "We do both. If the damage is limited to a section and matching material is available, a targeted repair is often the most cost-effective solution. We will give you an honest recommendation based on the overall condition of your siding.",
         },
       ]}
+      images={[
+        "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
+        "/projects/siding-exterior/deck-wrap-around-victorian.jpg",
+        "/projects/siding-exterior/siding-exterior-renovation.jpg",
+        "/projects/siding-exterior/siding-install-crew.jpg",
+        "/projects/siding-exterior/siding-renovation-progress-01.jpg",
+        "/projects/siding-exterior/siding-renovation-progress-02.jpg",
+        "/projects/siding-exterior/siding-renovation-progress-03.jpg",
+        "/projects/siding-exterior/porch-stairs-finished.jpg",
+      ]}
     />
   );
 }
