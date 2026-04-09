@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CWB Construction — Brand Guidelines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #1a3a2a;
+      --secondary: #132e21;
+      --accent: #c9a84c;
+      --background: #f9faf8;
+      --foreground: #1a1f1c;
+      --muted: #eef1ed;
+      --muted-fg: #5c6660;
+      --border: #dce0da;
+      --card: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: var(--foreground);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    /* Cover */
+    .cover {
+      background: var(--primary);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 40px;
+    }
+    .cover h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 56px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -1px;
+      line-height: 1.1;
+    }
+    .cover h1 span { color: var(--accent); }
+    .cover .subtitle {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 24px;
+    }
+    .cover .date {
+      color: rgba(255,255,255,0.3);
+      font-size: 13px;
+      margin-top: 40px;
+    }
+    .cover .divider {
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      margin: 32px auto;
+      border-radius: 2px;
+    }
+    .cover .tagline {
+      color: rgba(255,255,255,0.5);
+      font-size: 18px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* Section */
+    .section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-child { border-bottom: none; }
+    .section-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--foreground);
+      margin-bottom: 8px;
+    }
+    .section-desc {
+      color: var(--muted-fg);
+      font-size: 16px;
+      max-width: 600px;
+      margin-bottom: 48px;
+    }
+
+    /* Color Palette */
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .color-card {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .color-swatch {
+      height: 120px;
+    }
+    .color-info {
+      padding: 16px 20px;
+      background: #fff;
+    }
+    .color-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--foreground);
+    }
+    .color-role {
+      font-size: 12px;
+      color: var(--muted-fg);
+      margin-top: 2px;
+    }
+    .color-hex {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 13px;
+      color: var(--muted-fg);
+      margin-top: 8px;
+      background: var(--muted);
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    /* Typography */
+    .type-specimen {
+      background: var(--muted);
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 24px;
+    }
+    .type-display {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .type-body {
+      font-family: 'Inter', sans-serif;
+    }
+    .type-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .type-sample-xl {
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--foreground);
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+    .type-sample-lg {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--foreground);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .type-sample-md {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--foreground);
+      margin-bottom: 8px;
+    }
+    .type-sample-body {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--muted-fg);
+      line-height: 1.7;
+      max-width: 540px;
+    }
+    .type-weights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .type-weight-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+    .type-weight-preview {
+      font-size: 28px;
+      color: var(--foreground);
+      margin-bottom: 8px;
+    }
+    .type-weight-name {
+      font-size: 12px;
+      color: var(--muted-fg);
+    }
+
+    /* Usage Examples */
+    .usage-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .usage-card {
+      border-radius: 16px;
+      padding: 32px;
+      border: 1px solid var(--border);
+    }
+    .usage-card h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted-fg);
+      margin-bottom: 16px;
+    }
+
+    /* Button Specimens */
+    .btn-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      border: 2px solid transparent;
+    }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-accent { background: var(--accent); color: var(--primary); }
+    .btn-outline { background: transparent; border-color: var(--border); color: var(--foreground); }
+    .btn-outline-white { background: transparent; border-color: rgba(255,255,255,0.2); color: #fff; }
+
+    /* Dark Section */
+    .dark-section {
+      background: var(--primary);
+      padding: 80px 0;
+    }
+    .dark-section .section-label { color: var(--accent); }
+    .dark-section .section-title { color: #ffffff; }
+    .dark-section .section-desc { color: rgba(255,255,255,0.5); }
+
+    /* Spacing */
+    .spacing-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .spacing-item {
+      background: var(--muted);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .spacing-item .bar {
+      background: var(--accent);
+      height: 8px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+    .spacing-item .label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--foreground);
+    }
+    .spacing-item .value {
+      font-size: 11px;
+      color: var(--muted-fg);
+      font-family: monospace;
+    }
+
+    /* Dos and Donts */
+    .do-dont-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .do-card, .dont-card {
+      border-radius: 16px;
+      padding: 24px;
+      border: 2px solid;
+    }
+    .do-card { border-color: #22c55e; background: #f0fdf4; }
+    .dont-card { border-color: #ef4444; background: #fef2f2; }
+    .do-card h4, .dont-card h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    .do-card h4 { color: #16a34a; }
+    .dont-card h4 { color: #dc2626; }
+    .do-card ul, .dont-card ul {
+      list-style: none;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+    .do-card li::before { content: "✓ "; color: #16a34a; font-weight: 700; }
+    .dont-card li::before { content: "✗ "; color: #dc2626; font-weight: 700; }
+
+    /* Contact Summary */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .contact-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .contact-card .label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .contact-card .value {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    @media print {
+      .cover { min-height: auto; padding: 120px 40px; }
+      .section { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- COVER -->
+  <div class="cover">
+    <div>
+      <div class="subtitle">Brand Guidelines</div>
+      <h1>CWB <span>Construction</span></h1>
+      <div class="divider"></div>
+      <p class="tagline">Quality Craftsmanship. Reliable Service.<br>Greater Boston, MA & NH</p>
+      <p class="date">Prepared April 2026 &mdash; Confidential</p>
+    </div>
+  </div>
+
+  <!-- COLOR PALETTE -->
+  <div class="page">
+    <div class="section">
+      <div class="section-label">01 &mdash; Color Palette</div>
+      <div class="section-title">Brand Colors</div>
+      <div class="section-desc">
+        Our color palette is built on deep forest green and warm gold — communicating
+        trust, quality, and premium craftsmanship. These colors should be used
+        consistently across all materials.
+      </div>
+
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-swatch" style="background: #1a3a2a;"></div>
+          <div class="color-info">
+            <div class="color-name">Forest Green</div>
+            <div class="color-role">Primary — Headers, nav, dark sections</div>
+            <div class="color-hex">#1a3a2a</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #132e21;"></div>
+          <div class="color-info">
+            <div class="color-name">Deep Green</div>
+            <div class="color-role">Secondary — Footer, dropdowns</div>
+            <div class="color-hex">#132e21</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #c9a84c;"></div>
+          <div class="color-info">
+            <div class="color-name">Gold</div>
+            <div class="color-role">Accent — CTAs, highlights, logo text</div>
+            <div class="color-hex">#c9a84c</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #f9faf8;"></div>
+          <div class="color-info">
+            <div class="color-name">Warm White</div>
+            <div class="color-role">Background — Page body</div>
+            <div class="color-hex">#f9faf8</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #1a1f1c;"></div>
+          <div class="color-info">
+            <div class="color-name">Near Black</div>
+            <div class="color-role">Foreground — Body text, headings</div>
+            <div class="color-hex">#1a1f1c</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #eef1ed;"></div>
+          <div class="color-info">
+            <div class="color-name">Sage</div>
+            <div class="color-role">Muted — Cards, backgrounds, tags</div>
+            <div class="color-hex">#eef1ed</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #5c6660;"></div>
+          <div class="color-info">
+            <div class="color-name">Gray Green</div>
+            <div class="color-role">Muted Text — Descriptions, captions</div>
+            <div class="color-hex">#5c6660</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background: #dce0da;"></div>
+          <div class="color-info">
+            <div class="color-name">Light Sage</div>
+            <div class="color-role">Border — Dividers, card borders</div>
+            <div class="color-hex">#dce0da</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TYPOGRAPHY -->
+    <div class="section">
+      <div class="section-label">02 &mdash; Typography</div>
+      <div class="section-title">Fonts & Type Scale</div>
+      <div class="section-desc">
+        Two fonts work together to create a premium, readable experience.
+        Plus Jakarta Sans for headings and UI elements, Inter for body text.
+      </div>
+
+      <!-- Display Font -->
+      <div class="type-specimen">
+        <div class="type-label">Display Font &mdash; Plus Jakarta Sans</div>
+        <div class="type-display type-sample-xl">Quality Craftsmanship</div>
+        <div class="type-display type-sample-lg">Reliable Service</div>
+        <div class="type-display type-sample-md">Greater Boston, MA & NH</div>
+        <div class="type-weights">
+          <div class="type-weight-card">
+            <div class="type-weight-preview type-display" style="font-weight:500;">Aa</div>
+            <div class="type-weight-name">Medium (500)</div>
+          </div>
+          <div class="type-weight-card">
+            <div class="type-weight-preview type-display" style="font-weight:600;">Aa</div>
+            <div class="type-weight-name">SemiBold (600)</div>
+          </div>
+          <div class="type-weight-card">
+            <div class="type-weight-preview type-display" style="font-weight:700;">Aa</div>
+            <div class="type-weight-name">Bold (700)</div>
+          </div>
+          <div class="type-weight-card">
+            <div class="type-weight-preview type-display" style="font-weight:800;">Aa</div>
+            <div class="type-weight-name">ExtraBold (800)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Body Font -->
+      <div class="type-specimen">
+        <div class="type-label">Body Font &mdash; Inter</div>
+        <div class="type-body type-sample-body">
+          At CWB Construction, every project receives the same commitment to quality,
+          transparency, and respect for your home. We use only premium materials,
+          maintain clear communication throughout, and stand behind our work with
+          a comprehensive warranty. From kitchen remodels to emergency restoration,
+          we deliver premium results.
+        </div>
+        <div class="type-weights">
+          <div class="type-weight-card">
+            <div class="type-weight-preview type-body" style="font-weight:400;">Aa</div>
+            <div class="type-weight-name">Regular (400)</div>
+          </div>
+          <div class="type-weight-card">
+            <div class="type-weight-preview type-body" style="font-weight:500;">Aa</div>
+            <div class="type-weight-name">Medium (500)</div>
+          </div>
+          <div class="type-weight-card">
+            <div class="type-weight-preview type-body" style="font-weight:600;">Aa</div>
+            <div class="type-weight-name">SemiBold (600)</div>
+          </div>
+          <div class="type-weight-card">
+            <div class="type-weight-preview type-body" style="font-weight:700;">Aa</div>
+            <div class="type-weight-name">Bold (700)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Type Usage -->
+      <div style="margin-top: 40px;">
+        <h3 style="font-family: 'Plus Jakarta Sans'; font-weight: 700; font-size: 18px; margin-bottom: 20px; color: var(--foreground);">Type Usage Guide</h3>
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+          <thead>
+            <tr style="text-align: left; border-bottom: 2px solid var(--border);">
+              <th style="padding: 12px 0; color: var(--muted-fg); font-weight: 600;">Element</th>
+              <th style="padding: 12px 0; color: var(--muted-fg); font-weight: 600;">Font</th>
+              <th style="padding: 12px 0; color: var(--muted-fg); font-weight: 600;">Weight</th>
+              <th style="padding: 12px 0; color: var(--muted-fg); font-weight: 600;">Size</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 12px 0;">Hero Heading</td>
+              <td style="padding: 12px 0; font-family: 'Plus Jakarta Sans';">Plus Jakarta Sans</td>
+              <td style="padding: 12px 0;">ExtraBold (800)</td>
+              <td style="padding: 12px 0; font-family: monospace; color: var(--muted-fg);">48-60px</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 12px 0;">Section Heading</td>
+              <td style="padding: 12px 0; font-family: 'Plus Jakarta Sans';">Plus Jakarta Sans</td>
+              <td style="padding: 12px 0;">Bold (700)</td>
+              <td style="padding: 12px 0; font-family: monospace; color: var(--muted-fg);">28-36px</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 12px 0;">Card Title</td>
+              <td style="padding: 12px 0; font-family: 'Plus Jakarta Sans';">Plus Jakarta Sans</td>
+              <td style="padding: 12px 0;">Bold (700)</td>
+              <td style="padding: 12px 0; font-family: monospace; color: var(--muted-fg);">18-20px</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 12px 0;">Section Label</td>
+              <td style="padding: 12px 0; font-family: 'Plus Jakarta Sans';">Plus Jakarta Sans</td>
+              <td style="padding: 12px 0;">SemiBold (600)</td>
+              <td style="padding: 12px 0; font-family: monospace; color: var(--muted-fg);">11-13px uppercase</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 12px 0;">Body Text</td>
+              <td style="padding: 12px 0;">Inter</td>
+              <td style="padding: 12px 0;">Regular (400)</td>
+              <td style="padding: 12px 0; font-family: monospace; color: var(--muted-fg);">16px</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 12px 0;">Small Text / Captions</td>
+              <td style="padding: 12px 0;">Inter</td>
+              <td style="padding: 12px 0;">Regular (400)</td>
+              <td style="padding: 12px 0; font-family: monospace; color: var(--muted-fg);">13-14px</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 0;">Buttons / CTAs</td>
+              <td style="padding: 12px 0; font-family: 'Plus Jakarta Sans';">Plus Jakarta Sans</td>
+              <td style="padding: 12px 0;">Bold (700)</td>
+              <td style="padding: 12px 0; font-family: monospace; color: var(--muted-fg);">14-16px</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- BUTTONS & UI -->
+    <div class="section">
+      <div class="section-label">03 &mdash; UI Elements</div>
+      <div class="section-title">Buttons & Components</div>
+      <div class="section-desc">
+        Consistent button styles reinforce the brand. Primary actions use forest green
+        or gold, secondary actions use outlined styles.
+      </div>
+
+      <h4 style="font-family: 'Plus Jakarta Sans'; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted-fg); margin-bottom: 16px;">Light Background</h4>
+      <div class="btn-row" style="margin-bottom: 32px;">
+        <span class="btn btn-primary">Get a Free Estimate</span>
+        <span class="btn btn-accent">Get a Free Estimate</span>
+        <span class="btn btn-outline">Call (978) 904-6969</span>
+      </div>
+
+      <div style="background: var(--primary); border-radius: 16px; padding: 32px; margin-bottom: 32px;">
+        <h4 style="font-family: 'Plus Jakarta Sans'; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 16px;">Dark Background</h4>
+        <div class="btn-row">
+          <span class="btn btn-accent">Get a Free Estimate</span>
+          <span class="btn btn-outline-white">Call (978) 904-6969</span>
+        </div>
+      </div>
+
+      <h4 style="font-family: 'Plus Jakarta Sans'; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted-fg); margin-bottom: 16px;">Design Specs</h4>
+      <div class="spacing-grid">
+        <div class="spacing-item">
+          <div class="bar" style="width: 60%; margin-left: auto; margin-right: auto;"></div>
+          <div class="label">Border Radius</div>
+          <div class="value">10px (buttons) / 16px (cards)</div>
+        </div>
+        <div class="spacing-item">
+          <div class="bar" style="width: 40%; margin-left: auto; margin-right: auto;"></div>
+          <div class="label">Padding</div>
+          <div class="value">14px 28px (buttons)</div>
+        </div>
+        <div class="spacing-item">
+          <div class="bar" style="width: 50%; margin-left: auto; margin-right: auto;"></div>
+          <div class="label">Section Spacing</div>
+          <div class="value">80px top/bottom</div>
+        </div>
+        <div class="spacing-item">
+          <div class="bar" style="width: 70%; margin-left: auto; margin-right: auto;"></div>
+          <div class="label">Max Width</div>
+          <div class="value">1280px container</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGO PLACEMENT -->
+    <div class="section">
+      <div class="section-label">04 &mdash; Logo</div>
+      <div class="section-title">Logo Usage</div>
+      <div class="section-desc">
+        The CWB Construction logo will be added here once finalized. Below are
+        the placement guidelines and usage rules.
+      </div>
+
+      <div style="background: var(--muted); border-radius: 16px; padding: 60px; text-align: center; margin-bottom: 32px; border: 2px dashed var(--border);">
+        <p style="color: var(--muted-fg); font-size: 14px; font-style: italic;">Logo will be placed here</p>
+        <p style="color: var(--muted-fg); font-size: 12px; margin-top: 8px;">Primary horizontal lockup &mdash; Green background version</p>
+      </div>
+
+      <div class="do-dont-grid">
+        <div class="do-card">
+          <h4>Do</h4>
+          <ul>
+            <li>Use on dark green backgrounds with white + gold text</li>
+            <li>Maintain clear space around the logo (min 1x icon height)</li>
+            <li>Use the horizontal lockup for headers and business cards</li>
+            <li>Keep "CWB" in gold and "CONSTRUCTION" in white on dark</li>
+            <li>Use the icon mark alone as a favicon or app icon</li>
+          </ul>
+        </div>
+        <div class="dont-card">
+          <h4>Don't</h4>
+          <ul>
+            <li>Stretch, rotate, or distort the logo</li>
+            <li>Change the logo colors outside approved palette</li>
+            <li>Place on busy or low-contrast backgrounds</li>
+            <li>Add drop shadows, outlines, or effects</li>
+            <li>Use the icon without the wordmark on large formats</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRAND VOICE -->
+    <div class="section">
+      <div class="section-label">05 &mdash; Brand Voice</div>
+      <div class="section-title">Tone & Messaging</div>
+      <div class="section-desc">
+        CWB Construction's voice is confident, honest, and approachable. We speak
+        directly and clearly — no jargon, no overselling.
+      </div>
+
+      <div class="usage-grid">
+        <div class="usage-card">
+          <h4>We Sound Like</h4>
+          <ul style="list-style: none; font-size: 14px; line-height: 2; color: var(--muted-fg);">
+            <li>&#10003; Confident but not arrogant</li>
+            <li>&#10003; Honest and straightforward</li>
+            <li>&#10003; Professional yet approachable</li>
+            <li>&#10003; Knowledgeable without being technical</li>
+            <li>&#10003; Warm but businesslike</li>
+          </ul>
+        </div>
+        <div class="usage-card">
+          <h4>We Don't Sound Like</h4>
+          <ul style="list-style: none; font-size: 14px; line-height: 2; color: var(--muted-fg);">
+            <li>&#10007; Salesy or pushy</li>
+            <li>&#10007; Overly casual or slangy</li>
+            <li>&#10007; Vague or full of jargon</li>
+            <li>&#10007; Making promises we can't keep</li>
+            <li>&#10007; Cold or corporate</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top: 32px; background: var(--muted); border-radius: 16px; padding: 32px;">
+        <h4 style="font-family: 'Plus Jakarta Sans'; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted-fg); margin-bottom: 16px;">Key Phrases</h4>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <span style="background: var(--primary); color: #fff; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600;">Quality Craftsmanship</span>
+          <span style="background: var(--primary); color: #fff; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600;">Reliable Service</span>
+          <span style="background: var(--primary); color: #fff; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600;">Licensed & Insured</span>
+          <span style="background: var(--primary); color: #fff; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600;">No Surprises</span>
+          <span style="background: var(--primary); color: #fff; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600;">Built on Trust</span>
+          <span style="background: var(--primary); color: #fff; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600;">Delivered with Excellence</span>
+          <span style="background: var(--primary); color: #fff; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600;">24/7 Emergency Response</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT SUMMARY (Dark) -->
+  <div class="dark-section">
+    <div class="page">
+      <div class="section-label">06 &mdash; Brand Summary</div>
+      <div class="section-title">Quick Reference</div>
+      <div class="section-desc">Core brand assets at a glance.</div>
+
+      <div class="contact-grid" style="margin-top: 40px;">
+        <div class="contact-card">
+          <div class="label">Business Name</div>
+          <div class="value">CWB Construction Inc.</div>
+        </div>
+        <div class="contact-card">
+          <div class="label">Website</div>
+          <div class="value">cwbconstructioninc.com</div>
+        </div>
+        <div class="contact-card">
+          <div class="label">Phone</div>
+          <div class="value">(978) 904-6969</div>
+        </div>
+        <div class="contact-card">
+          <div class="label">Email</div>
+          <div class="value" style="font-size: 13px;">support@cwbconstructioninc.com</div>
+        </div>
+        <div class="contact-card">
+          <div class="label">Service Area</div>
+          <div class="value">Greater Boston, MA & NH</div>
+        </div>
+        <div class="contact-card">
+          <div class="label">Primary Font</div>
+          <div class="value" style="font-family: 'Plus Jakarta Sans';">Plus Jakarta Sans</div>
+        </div>
+        <div class="contact-card">
+          <div class="label">Body Font</div>
+          <div class="value">Inter</div>
+        </div>
+        <div class="contact-card">
+          <div class="label">Primary Color</div>
+          <div class="value" style="display: flex; align-items: center; gap: 8px;">
+            <span style="width: 20px; height: 20px; background: #1a3a2a; border-radius: 4px; display: inline-block; border: 1px solid rgba(255,255,255,0.2);"></span>
+            #1a3a2a
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="label">Accent Color</div>
+          <div class="value" style="display: flex; align-items: center; gap: 8px;">
+            <span style="width: 20px; height: 20px; background: #c9a84c; border-radius: 4px; display: inline-block;"></span>
+            #c9a84c
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align: center; padding: 40px; color: var(--muted-fg); font-size: 12px;">
+    CWB Construction Inc. &mdash; Brand Guidelines &mdash; April 2026 &mdash; Confidential
+  </div>
+
+</body>
+</html>

@@ -1,4 +1,32 @@
+import Image from "next/image";
 import Link from "next/link";
+
+const recentProjects = [
+  {
+    title: "Custom Ipe Hardwood Deck",
+    type: "Decks & Outdoor",
+    image: "/projects/decks-outdoor/hardwood-deck-2022/deck-finished-exterior-full.jpg",
+    href: "/portfolio",
+  },
+  {
+    title: "Victorian Exterior Renovation",
+    type: "Siding & Exterior",
+    image: "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
+    href: "/portfolio",
+  },
+  {
+    title: "Composite Deck & Paver Patio",
+    type: "Decks & Outdoor",
+    image: "/projects/decks-outdoor/composite-deck-2023-b/composite-deck-evening-01.jpg",
+    href: "/portfolio",
+  },
+  {
+    title: "Elevated Deck & Staircase",
+    type: "Decks & Outdoor",
+    image: "/projects/decks-outdoor/elevated-deck-2023/elevated-deck-finished-exterior.jpg",
+    href: "/portfolio",
+  },
+];
 
 const services = [
   {
@@ -202,6 +230,67 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Recent Projects */}
+      <section className="py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between mb-12">
+            <div>
+              <span className="text-accent font-display font-semibold text-sm uppercase tracking-widest">Recent Work</span>
+              <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-foreground">
+                Our Latest Projects
+              </h2>
+            </div>
+            <Link
+              href="/portfolio"
+              className="hidden sm:inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all"
+            >
+              View All Projects
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {recentProjects.map((project) => (
+              <Link
+                key={project.title}
+                href={project.href}
+                className="group rounded-2xl overflow-hidden border border-border hover:shadow-lg hover:border-accent/30 transition-all duration-300"
+              >
+                <div className="aspect-[4/3] relative overflow-hidden bg-muted">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-4 bg-card">
+                  <p className="text-[10px] font-bold text-accent uppercase tracking-widest">{project.type}</p>
+                  <h3 className="font-display font-bold text-foreground mt-1 group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="sm:hidden text-center mt-8">
+            <Link
+              href="/portfolio"
+              className="text-accent font-semibold inline-flex items-center gap-2"
+            >
+              View All Projects
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
