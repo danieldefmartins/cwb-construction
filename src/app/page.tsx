@@ -127,14 +127,14 @@ export default function Home() {
       {/* Stats */}
       <section className="relative -mt-12 z-10">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="bg-card rounded-2xl shadow-xl border border-border p-8">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="bg-card rounded-2xl shadow-xl border border-border p-6 sm:p-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <p className="font-display text-3xl sm:text-4xl font-bold text-primary">
+                  <p className="font-display text-2xl sm:text-4xl font-bold text-primary">
                     {stat.value}
                   </p>
-                  <p className="mt-1 text-sm text-muted-foreground font-medium">
+                  <p className="mt-1 text-xs sm:text-sm text-muted-foreground font-medium">
                     {stat.label}
                   </p>
                 </div>
@@ -315,16 +315,16 @@ export default function Home() {
                 <p className="text-muted-foreground">24/7 emergency response. We&apos;ll be there fast to minimize damage and start restoration.</p>
               </div>
             </div>
-            <div className="flex gap-3 flex-shrink-0">
+            <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto flex-shrink-0">
               <a
                 href="tel:+19789046969"
-                className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-display font-bold transition-colors"
+                className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-display font-bold transition-colors text-center text-sm sm:text-base"
               >
                 Call Now: (978) 904-6969
               </a>
               <Link
                 href="/services/fire-water-damage"
-                className="border-2 border-red-200 hover:border-red-300 text-red-700 px-6 py-3 rounded-lg font-display font-semibold transition-colors"
+                className="border-2 border-red-200 hover:border-red-300 text-red-700 px-6 py-3 rounded-lg font-display font-semibold transition-colors text-center text-sm sm:text-base"
               >
                 Learn More
               </Link>
