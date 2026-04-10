@@ -98,6 +98,12 @@ Serving homeowners across Greater Boston, the North Shore, and Southern New Hamp
             "Kitchen remodels in Greater Boston typically range from $35,000 to $100,000+ depending on size, materials, and structural changes. We provide transparent, itemized estimates so you understand exactly where your budget is going.",
         },
       ]}
+      images={[
+        "/projects/web-pictures/kitchen-barry-78333-4.jpg.webp",
+        "/projects/web-pictures/28Burton-29-scaled.jpg.webp",
+        "/projects/web-pictures/RazzanoColorfulCharmMain.jpg",
+        "/projects/web-pictures/Razzano-Homes-Remodeling-living-space-6.jpg",
+      ]}
     />
   );
 }

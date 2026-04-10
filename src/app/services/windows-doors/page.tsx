@@ -99,10 +99,12 @@ We serve homeowners across Greater Boston, the North Shore, Merrimack Valley, an
         },
       ]}
       images={[
+        "/projects/web-pictures/impact-of-windows-on-home-comfort.jpg.webp",
+        "/projects/web-pictures/Champion-Windows-Siding-1-min.jpg.webp",
+        "/projects/web-pictures/patio-enclosure-1-xlarge.jpg.webp",
         "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
         "/projects/siding-exterior/porch-stairs-finished.jpg",
-        "/projects/siding-exterior/siding-exterior-renovation.jpg",
-        "/projects/decks-outdoor/composite-deck-2023-a/composite-deck-exterior-01.jpg",
+        "/projects/web-pictures/home-remodeling.jpg",
       ]}
     />
   );

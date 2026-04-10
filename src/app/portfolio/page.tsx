@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-type ProjectCategory = "all" | "decks" | "siding" | "roofing" | "paving";
+type ProjectCategory = "all" | "decks" | "siding" | "roofing" | "paving" | "kitchen" | "bathroom" | "remodeling";
 
 interface Project {
   id: string;
@@ -176,10 +176,94 @@ const projects: Project[] = [
       "/projects/paving-hardscape/paver-walkway-01.jpg",
     ],
   },
+  {
+    id: "kitchen-remodel-2024",
+    title: "Modern Kitchen Renovation",
+    type: "Kitchen Remodeling",
+    category: "kitchen",
+    location: "Greater Boston, MA",
+    year: "2024",
+    description: "Complete kitchen transformation with custom gray cabinetry, quartz countertops, modern lighting, and premium appliances. Open-concept layout redesign for improved flow and functionality.",
+    heroImage: "/projects/web-pictures/kitchen-barry-78333-4.jpg.webp",
+    images: [
+      "/projects/web-pictures/kitchen-barry-78333-4.jpg.webp",
+      "/projects/web-pictures/28Burton-29-scaled.jpg.webp",
+      "/projects/web-pictures/RazzanoColorfulCharmMain.jpg",
+      "/projects/web-pictures/Razzano-Homes-Remodeling-living-space-6.jpg",
+    ],
+  },
+  {
+    id: "bathroom-remodel-2024",
+    title: "Luxury Bathroom Renovation",
+    type: "Bathroom Remodeling",
+    category: "bathroom",
+    location: "Greater Boston, MA",
+    year: "2024",
+    description: "Spa-like bathroom retreat with premium tile work, modern fixtures, custom vanity, and glass shower enclosure. Complete tear-out and rebuild with updated plumbing and lighting.",
+    heroImage: "/projects/web-pictures/SabourinA3-1-scaled.jpeg.webp",
+    images: [
+      "/projects/web-pictures/SabourinA3-1-scaled.jpeg.webp",
+      "/projects/web-pictures/1-Koblenz-14.jpg.webp",
+      "/projects/web-pictures/2-Koblenz-1.jpg.webp",
+      "/projects/web-pictures/16865-2.jpg.webp",
+    ],
+  },
+  {
+    id: "new-construction-2024",
+    title: "Custom New Construction",
+    type: "New Construction",
+    category: "remodeling",
+    location: "Greater Boston, MA",
+    year: "2024",
+    description: "Ground-up custom home build with modern farmhouse design, stone and board-and-batten exterior, and premium interior finishes throughout.",
+    heroImage: "/projects/web-pictures/home-remodeling.jpg",
+    images: [
+      "/projects/web-pictures/home-remodeling.jpg",
+      "/projects/web-pictures/RazzanoSunsetViewMain.jpg",
+      "/projects/web-pictures/16265-17028-24.jpg.webp",
+      "/projects/web-pictures/16265-17028-26.jpg.webp",
+      "/projects/web-pictures/16265-17028-31.jpg.webp",
+    ],
+  },
+  {
+    id: "whole-home-2024",
+    title: "Whole Home Interior Renovation",
+    type: "Home Remodeling",
+    category: "remodeling",
+    location: "Greater Boston, MA",
+    year: "2024",
+    description: "Complete interior renovation including open-concept living areas, indoor-outdoor living space with fire pit patio, and sunset views. Premium hardwood flooring and custom built-ins.",
+    heroImage: "/projects/web-pictures/Razzano-Homes-Remodeling-living-space-6.jpg",
+    images: [
+      "/projects/web-pictures/Razzano-Homes-Remodeling-living-space-6.jpg",
+      "/projects/web-pictures/RazzanoSunsetViewMain.jpg",
+      "/projects/web-pictures/16265-17028-24.jpg.webp",
+      "/projects/web-pictures/yankee-home-improvement.webp",
+    ],
+  },
+  {
+    id: "windows-siding-2024",
+    title: "Windows & Siding Upgrade",
+    type: "Siding & Exterior",
+    category: "siding",
+    location: "Greater Boston, MA",
+    year: "2024",
+    description: "Full exterior transformation with energy-efficient windows, insulated siding, and updated trim. Improved curb appeal and home energy performance.",
+    heroImage: "/projects/web-pictures/Champion-Windows-Siding-1-min.jpg.webp",
+    images: [
+      "/projects/web-pictures/Champion-Windows-Siding-1-min.jpg.webp",
+      "/projects/web-pictures/impact-of-windows-on-home-comfort.jpg.webp",
+      "/projects/web-pictures/Vista-Home-Improvement_Insulated-Siding-1.jpg",
+      "/projects/web-pictures/patio-enclosure-1-xlarge.jpg.webp",
+    ],
+  },
 ];
 
 const categories: { value: ProjectCategory; label: string }[] = [
   { value: "all", label: "All Projects" },
+  { value: "kitchen", label: "Kitchen" },
+  { value: "bathroom", label: "Bathroom" },
+  { value: "remodeling", label: "Remodeling" },
   { value: "decks", label: "Decks & Outdoor" },
   { value: "siding", label: "Siding & Exterior" },
   { value: "roofing", label: "Roofing" },

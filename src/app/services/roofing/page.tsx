@@ -95,9 +95,11 @@ export default function RoofingPage() {
         },
       ]}
       images={[
+        "/projects/web-pictures/Greenfield_Roof-Repair_img3-1-1024x768-1.jpg.webp",
         "/projects/roofing/roof-shingle-install-01.jpg",
         "/projects/roofing/roof-shingle-install-02.jpg",
         "/projects/roofing/roof-shingle-progress-01.jpg",
+        "/projects/web-pictures/Greenfield_Roof-Repair_img3-1-1024x768-1.jpg-2.webp",
         "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
       ]}
     />

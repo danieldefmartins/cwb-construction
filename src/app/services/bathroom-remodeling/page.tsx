@@ -98,6 +98,12 @@ From condos in Boston to colonials on the North Shore and homes throughout South
             "Bathroom remodels in the Boston area typically run $15,000 to $50,000+ depending on scope, tile selection, and fixture quality. We provide a line-item estimate upfront so there are no surprises.",
         },
       ]}
+      images={[
+        "/projects/web-pictures/SabourinA3-1-scaled.jpeg.webp",
+        "/projects/web-pictures/1-Koblenz-14.jpg.webp",
+        "/projects/web-pictures/2-Koblenz-1.jpg.webp",
+        "/projects/web-pictures/16865-2.jpg.webp",
+      ]}
     />
   );
 }

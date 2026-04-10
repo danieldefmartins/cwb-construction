@@ -99,10 +99,12 @@ We work with homeowners across Greater Boston, the Merrimack Valley, and Souther
         },
       ]}
       images={[
-        "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
-        "/projects/decks-outdoor/hardwood-deck-2022/deck-finished-exterior-full.jpg",
-        "/projects/siding-exterior/porch-stairs-finished.jpg",
-        "/projects/decks-outdoor/composite-deck-2023-b/composite-deck-evening-01.jpg",
+        "/projects/web-pictures/home-remodeling.jpg",
+        "/projects/web-pictures/RazzanoSunsetViewMain.jpg",
+        "/projects/web-pictures/16265-17028-24.jpg.webp",
+        "/projects/web-pictures/16265-17028-26.jpg.webp",
+        "/projects/web-pictures/16265-17028-31.jpg.webp",
+        "/projects/web-pictures/Razzano-Homes-Remodeling-living-space-6.jpg",
       ]}
     />
   );

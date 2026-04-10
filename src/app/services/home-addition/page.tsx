@@ -95,10 +95,12 @@ export default function HomeAdditionPage() {
         },
       ]}
       images={[
+        "/projects/web-pictures/home-remodeling.jpg",
+        "/projects/web-pictures/16265-17028-24.jpg.webp",
+        "/projects/web-pictures/patio-enclosure-1-xlarge.jpg.webp",
         "/projects/decks-outdoor/elevated-deck-2023/elevated-deck-finished-exterior.jpg",
-        "/projects/framing-progress/stair-stringer-build-action.jpg",
-        "/projects/decks-outdoor/elevated-deck-2023/elevated-deck-framing-01.jpg",
         "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
+        "/projects/web-pictures/RazzanoSunsetViewMain.jpg",
       ]}
     />
   );
