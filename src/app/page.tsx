@@ -92,6 +92,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-primary/85 to-primary/70" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-28 sm:py-36 lg:py-44">
           <div className="max-w-3xl">
+            <Image
+              src="/logo-white.png"
+              alt="CWB Construction"
+              width={260}
+              height={70}
+              className="h-14 sm:h-16 w-auto mb-8"
+            />
             <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 rounded-full px-4 py-1.5 mb-6">
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
               <span className="text-accent text-xs font-semibold uppercase tracking-widest">Licensed & Insured</span>
