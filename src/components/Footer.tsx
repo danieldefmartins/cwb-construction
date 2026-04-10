@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const serviceLinks = [
@@ -31,14 +32,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
-                <span className="font-display text-sm font-black text-primary">C</span>
-              </div>
-              <div>
-                <span className="font-display text-lg font-bold tracking-tight">CWB</span>
-                <span className="font-display text-[10px] font-semibold text-accent uppercase tracking-[0.2em] ml-2">Construction</span>
-              </div>
+            <Link href="/" className="inline-block">
+              <Image
+                src="/logo-white.png"
+                alt="CWB Construction"
+                width={180}
+                height={48}
+                className="h-10 w-auto"
+              />
             </Link>
             <p className="mt-4 text-white/50 text-sm leading-relaxed max-w-sm">
               Quality craftsmanship and reliable service for every project. Licensed

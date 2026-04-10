@@ -33,6 +33,22 @@ export const metadata: Metadata = {
     "Massachusetts",
     "New Hampshire",
   ],
+  metadataBase: new URL("https://cwbconstructioninc.com"),
+  openGraph: {
+    title: "CWB Construction | General Contractor | Greater Boston & NH",
+    description:
+      "Quality craftsmanship for home remodeling, roofing, new construction & more. Licensed & insured, serving Greater Boston, MA & NH.",
+    url: "https://cwbconstructioninc.com",
+    siteName: "CWB Construction",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CWB Construction | General Contractor",
+    description:
+      "Quality craftsmanship for home remodeling, roofing, new construction & more. Serving Greater Boston, MA & NH.",
+  },
 };
 
 export default function RootLayout({
