@@ -90,7 +90,7 @@ export default function Home() {
         />
         {/* Dark green overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-primary/85 to-primary/70" />
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-28 sm:py-36 lg:py-44">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-36 lg:py-44">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 rounded-full px-4 py-1.5 mb-6">
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
