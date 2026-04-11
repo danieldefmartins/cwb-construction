@@ -95,9 +95,9 @@ export default function BasementRenovationPage() {
         },
       ]}
       images={[
-        "/projects/web-pictures/16865-2.jpg.webp",
-        "/projects/web-pictures/16265-17028-31.jpg.webp",
-        "/projects/web-pictures/16265-17028-26.jpg.webp",
+        "/projects/web-pictures/16865-2.webp",
+        "/projects/web-pictures/16265-17028-31.webp",
+        "/projects/web-pictures/16265-17028-26.webp",
         "/projects/web-pictures/yankee-home-improvement.webp",
         "/projects/framing-progress/stair-stringer-build-action.jpg",
         "/projects/framing-progress/deck-framing-posts-01.jpg",

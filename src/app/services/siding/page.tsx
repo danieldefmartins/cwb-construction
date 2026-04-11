@@ -95,7 +95,7 @@ export default function SidingPage() {
         },
       ]}
       images={[
-        "/projects/web-pictures/Champion-Windows-Siding-1-min.jpg.webp",
+        "/projects/web-pictures/Champion-Windows-Siding-1-min.webp",
         "/projects/web-pictures/Vista-Home-Improvement_Insulated-Siding-1.jpg",
         "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
         "/projects/siding-exterior/siding-exterior-renovation.jpg",

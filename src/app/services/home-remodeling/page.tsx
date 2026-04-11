@@ -101,9 +101,9 @@ We work with homeowners across Greater Boston, the Merrimack Valley, and Souther
       images={[
         "/projects/web-pictures/home-remodeling.jpg",
         "/projects/web-pictures/RazzanoSunsetViewMain.jpg",
-        "/projects/web-pictures/16265-17028-24.jpg.webp",
-        "/projects/web-pictures/16265-17028-26.jpg.webp",
-        "/projects/web-pictures/16265-17028-31.jpg.webp",
+        "/projects/web-pictures/16265-17028-24.webp",
+        "/projects/web-pictures/16265-17028-26.webp",
+        "/projects/web-pictures/16265-17028-31.webp",
         "/projects/web-pictures/Razzano-Homes-Remodeling-living-space-6.jpg",
       ]}
     />

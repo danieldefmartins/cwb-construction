@@ -99,8 +99,8 @@ Serving homeowners across Greater Boston, the North Shore, and Southern New Hamp
         },
       ]}
       images={[
-        "/projects/web-pictures/kitchen-barry-78333-4.jpg.webp",
-        "/projects/web-pictures/28Burton-29-scaled.jpg.webp",
+        "/projects/web-pictures/kitchen-barry-78333-4.webp",
+        "/projects/web-pictures/28Burton-29-scaled.webp",
         "/projects/web-pictures/RazzanoColorfulCharmMain.jpg",
         "/projects/web-pictures/Razzano-Homes-Remodeling-living-space-6.jpg",
       ]}
