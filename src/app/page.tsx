@@ -3,27 +3,27 @@ import Link from "next/link";
 
 const recentProjects = [
   {
-    title: "Custom Ipe Hardwood Deck",
-    type: "Decks & Outdoor",
-    image: "/projects/decks-outdoor/hardwood-deck-2022/deck-finished-exterior-full.jpg",
+    title: "Modern Kitchen Renovation",
+    type: "Kitchen Remodeling",
+    image: "/projects/web-pictures/modern-gray-kitchen.webp",
     href: "/portfolio",
   },
   {
-    title: "Victorian Exterior Renovation",
-    type: "Siding & Exterior",
-    image: "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
+    title: "Custom Farmhouse Build",
+    type: "New Construction",
+    image: "/projects/web-pictures/modern-farmhouse-exterior.jpg",
     href: "/portfolio",
   },
   {
-    title: "Composite Deck & Paver Patio",
-    type: "Decks & Outdoor",
-    image: "/projects/decks-outdoor/composite-deck-2023-b/composite-deck-evening-01.jpg",
+    title: "Luxury Living Space",
+    type: "Home Remodeling",
+    image: "/projects/web-pictures/living-room-deck-sunset.jpg",
     href: "/portfolio",
   },
   {
-    title: "Elevated Deck & Staircase",
-    type: "Decks & Outdoor",
-    image: "/projects/decks-outdoor/elevated-deck-2023/elevated-deck-finished-exterior.jpg",
+    title: "Home at Sunset",
+    type: "New Construction",
+    image: "/projects/web-pictures/custom-home-sunset.jpg",
     href: "/portfolio",
   },
 ];
@@ -81,7 +81,7 @@ export default function Home() {
       <section className="relative bg-secondary overflow-hidden">
         {/* Background Photo */}
         <Image
-          src="/projects/siding-exterior/victorian-exterior-finished-01.jpg"
+          src="/projects/web-pictures/modern-farmhouse-exterior.jpg"
           alt="CWB Construction project"
           fill
           priority

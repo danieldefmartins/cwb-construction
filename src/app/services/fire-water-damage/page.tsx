@@ -100,10 +100,10 @@ We work directly with all major insurance carriers and can assist with your clai
       ]}
       emergency={true}
       images={[
-        "/projects/web-pictures/Greenfield_Roof-Repair_img3-1-1024x768-1.webp",
-        "/projects/web-pictures/Greenfield_Roof-Repair_img3-1-1024x768-1.webp",
-        "/projects/web-pictures/yankee-home-improvement.webp",
-        "/projects/web-pictures/home-remodeling.jpg",
+        "/projects/web-pictures/roof-repair-shingles.webp",
+        "/projects/web-pictures/cape-style-american-home.webp",
+        "/projects/web-pictures/modern-farmhouse-exterior.jpg",
+        "/projects/web-pictures/colonial-exterior-blue.webp",
       ]}
     />
   );

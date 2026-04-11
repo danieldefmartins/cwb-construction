@@ -95,12 +95,12 @@ export default function RoofingPage() {
         },
       ]}
       images={[
-        "/projects/web-pictures/Greenfield_Roof-Repair_img3-1-1024x768-1.webp",
-        "/projects/roofing/roof-shingle-install-01.jpg",
-        "/projects/roofing/roof-shingle-install-02.jpg",
-        "/projects/roofing/roof-shingle-progress-01.jpg",
-        "/projects/web-pictures/Greenfield_Roof-Repair_img3-1-1024x768-1.webp",
-        "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
+        "/projects/web-pictures/roof-repair-shingles.webp",
+        "/projects/web-pictures/modern-farmhouse-exterior.jpg",
+        "/projects/web-pictures/colonial-exterior-blue.webp",
+        "/projects/web-pictures/cape-style-american-home.webp",
+        "/projects/web-pictures/blue-siding-house.webp",
+        "/projects/web-pictures/custom-home-sunset.jpg",
       ]}
     />
   );

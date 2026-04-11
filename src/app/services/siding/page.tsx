@@ -95,14 +95,12 @@ export default function SidingPage() {
         },
       ]}
       images={[
-        "/projects/web-pictures/Champion-Windows-Siding-1-min.webp",
-        "/projects/web-pictures/Vista-Home-Improvement_Insulated-Siding-1.jpg",
-        "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
-        "/projects/siding-exterior/siding-exterior-renovation.jpg",
-        "/projects/siding-exterior/siding-install-crew.jpg",
-        "/projects/siding-exterior/porch-stairs-finished.jpg",
-        "/projects/siding-exterior/siding-renovation-progress-01.jpg",
-        "/projects/siding-exterior/siding-renovation-progress-02.jpg",
+        "/projects/web-pictures/blue-siding-house.webp",
+        "/projects/web-pictures/gray-siding-house.jpg",
+        "/projects/web-pictures/cape-style-american-home.webp",
+        "/projects/web-pictures/colonial-exterior-blue.webp",
+        "/projects/web-pictures/modern-farmhouse-exterior.jpg",
+        "/projects/web-pictures/custom-home-sunset.jpg",
       ]}
     />
   );

@@ -95,12 +95,12 @@ export default function BasementRenovationPage() {
         },
       ]}
       images={[
-        "/projects/web-pictures/16865-2.webp",
-        "/projects/web-pictures/16265-17028-31.webp",
-        "/projects/web-pictures/16265-17028-26.webp",
-        "/projects/web-pictures/yankee-home-improvement.webp",
-        "/projects/framing-progress/stair-stringer-build-action.jpg",
-        "/projects/framing-progress/deck-framing-posts-01.jpg",
+        "/projects/web-pictures/basement-theater-room.webp",
+        "/projects/web-pictures/vaulted-living-room.webp",
+        "/projects/web-pictures/stone-fireplace-arched-windows.webp",
+        "/projects/web-pictures/game-room-stone-fireplace.webp",
+        "/projects/web-pictures/cape-style-american-home.webp",
+        "/projects/web-pictures/modern-farmhouse-exterior.jpg",
       ]}
     />
   );

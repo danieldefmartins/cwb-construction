@@ -95,12 +95,12 @@ export default function HomeAdditionPage() {
         },
       ]}
       images={[
-        "/projects/web-pictures/home-remodeling.jpg",
-        "/projects/web-pictures/16265-17028-24.webp",
-        "/projects/web-pictures/patio-enclosure-1-xlarge.webp",
-        "/projects/decks-outdoor/elevated-deck-2023/elevated-deck-finished-exterior.jpg",
-        "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
-        "/projects/web-pictures/RazzanoSunsetViewMain.jpg",
+        "/projects/web-pictures/modern-farmhouse-exterior.jpg",
+        "/projects/web-pictures/game-room-stone-fireplace.webp",
+        "/projects/web-pictures/patio-enclosure-outdoor.webp",
+        "/projects/web-pictures/vaulted-living-room.webp",
+        "/projects/web-pictures/colonial-exterior-blue.webp",
+        "/projects/web-pictures/custom-home-sunset.jpg",
       ]}
     />
   );

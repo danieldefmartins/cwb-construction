@@ -99,14 +99,14 @@ Whether you're building on a lot you already own or developing a new parcel, we 
         },
       ]}
       images={[
-        "/projects/web-pictures/home-remodeling.jpg",
-        "/projects/web-pictures/RazzanoSunsetViewMain.jpg",
-        "/projects/framing-progress/deck-framing-posts-01.jpg",
-        "/projects/framing-progress/stair-stringer-build-action.jpg",
-        "/projects/siding-exterior/siding-install-crew.jpg",
-        "/projects/roofing/roof-shingle-install-01.jpg",
-        "/projects/siding-exterior/victorian-exterior-finished-01.jpg",
-        "/projects/decks-outdoor/hardwood-deck-2022/deck-finished-exterior-full.jpg",
+        "/projects/web-pictures/modern-farmhouse-exterior.jpg",
+        "/projects/web-pictures/custom-home-sunset.jpg",
+        "/projects/web-pictures/colonial-exterior-blue.webp",
+        "/projects/web-pictures/cape-style-american-home.webp",
+        "/projects/web-pictures/blue-siding-house.webp",
+        "/projects/web-pictures/roof-repair-shingles.webp",
+        "/projects/web-pictures/gray-siding-house.jpg",
+        "/projects/web-pictures/living-room-deck-sunset.jpg",
       ]}
     />
   );

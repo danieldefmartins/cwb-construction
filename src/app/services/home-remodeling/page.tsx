@@ -99,12 +99,12 @@ We work with homeowners across Greater Boston, the Merrimack Valley, and Souther
         },
       ]}
       images={[
-        "/projects/web-pictures/home-remodeling.jpg",
-        "/projects/web-pictures/RazzanoSunsetViewMain.jpg",
-        "/projects/web-pictures/16265-17028-24.webp",
-        "/projects/web-pictures/16265-17028-26.webp",
-        "/projects/web-pictures/16265-17028-31.webp",
-        "/projects/web-pictures/Razzano-Homes-Remodeling-living-space-6.jpg",
+        "/projects/web-pictures/modern-farmhouse-exterior.jpg",
+        "/projects/web-pictures/custom-home-sunset.jpg",
+        "/projects/web-pictures/game-room-stone-fireplace.webp",
+        "/projects/web-pictures/stone-fireplace-arched-windows.webp",
+        "/projects/web-pictures/vaulted-living-room.webp",
+        "/projects/web-pictures/living-room-deck-sunset.jpg",
       ]}
     />
   );

@@ -99,18 +99,12 @@ From pressure-treated lumber to low-maintenance composite decking from Trex, Tim
         },
       ]}
       images={[
-        "/projects/web-pictures/Deck-Contractor-TimberTech-Composite-1024x694-1.jpg",
-        "/projects/decks-outdoor/composite-deck-2023-b/composite-deck-evening-01.jpg",
-        "/projects/decks-outdoor/hardwood-deck-2022/deck-finished-exterior-full.jpg",
-        "/projects/decks-outdoor/hardwood-deck-2022/deck-finished-front-01.jpg",
-        "/projects/decks-outdoor/hardwood-deck-2022/deck-finished-lattice-01.jpg",
-        "/projects/decks-outdoor/hardwood-deck-2022/deck-finished-stairs-01.jpg",
-        "/projects/decks-outdoor/composite-deck-2023-a/composite-deck-exterior-01.jpg",
-        "/projects/decks-outdoor/composite-deck-2023-a/composite-deck-railing-01.jpg",
-        "/projects/decks-outdoor/elevated-deck-2023/elevated-deck-finished-exterior.jpg",
-        "/projects/decks-outdoor/hardwood-deck-2024/hardwood-deck-finished-01.jpg",
-        "/projects/decks-outdoor/hardwood-deck-2024/hardwood-deck-finished-lattice-01.jpg",
-        "/projects/decks-outdoor/hardwood-deck-2022/deck-progress-boards-01.jpg",
+        "/projects/web-pictures/composite-deck-timbertech.jpg",
+        "/projects/web-pictures/patio-enclosure-outdoor.webp",
+        "/projects/web-pictures/custom-home-sunset.jpg",
+        "/projects/web-pictures/living-room-deck-sunset.jpg",
+        "/projects/web-pictures/modern-farmhouse-exterior.jpg",
+        "/projects/web-pictures/cape-style-american-home.webp",
       ]}
     />
   );

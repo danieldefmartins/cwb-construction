@@ -99,10 +99,12 @@ Serving homeowners across Greater Boston, the North Shore, and Southern New Hamp
         },
       ]}
       images={[
-        "/projects/web-pictures/kitchen-barry-78333-4.webp",
-        "/projects/web-pictures/28Burton-29-scaled.webp",
-        "/projects/web-pictures/RazzanoColorfulCharmMain.jpg",
-        "/projects/web-pictures/Razzano-Homes-Remodeling-living-space-6.jpg",
+        "/projects/web-pictures/modern-gray-kitchen.webp",
+        "/projects/web-pictures/luxury-white-kitchen.webp",
+        "/projects/web-pictures/teal-kitchen-remodel.jpg",
+        "/projects/web-pictures/open-kitchen-marble-island.webp",
+        "/projects/web-pictures/kitchen-living-open-concept.webp",
+        "/projects/web-pictures/living-room-deck-sunset.jpg",
       ]}
     />
   );

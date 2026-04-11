@@ -99,10 +99,10 @@ From condos in Boston to colonials on the North Shore and homes throughout South
         },
       ]}
       images={[
-        "/projects/web-pictures/SabourinA3-1-scaled.webp",
-        "/projects/web-pictures/1-Koblenz-14.webp",
-        "/projects/web-pictures/2-Koblenz-1.webp",
-        "/projects/web-pictures/16865-2.webp",
+        "/projects/web-pictures/colonial-exterior-blue.webp",
+        "/projects/web-pictures/open-kitchen-marble-island.webp",
+        "/projects/web-pictures/kitchen-living-open-concept.webp",
+        "/projects/web-pictures/basement-theater-room.webp",
       ]}
     />
   );
